@@ -3,7 +3,7 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-let fullName = "Laura Landon";
+let fullName = "Laura Landon-Lovell";
 let currentYear = "2023";
 let profilePicture = "images/Lauracopy.JPG";
 
@@ -14,8 +14,8 @@ const yearElement = document.querySelector("#year");
 var imageElement = document.createElement("img");
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = "<strong>$(fullName)</strong>";
-yearElement.textContent = "2023";
+nameElement.innerHTML = `<strong>${"Laura Landon-Lovell"}</strong>`;
+yearElement.textContent = `<strong>${"2023"}</strong>;
 imageElement.setAttribute("src", profilePicture);
 imageElement = element.setAttribute("alt", "Profile image of ${fullName}");
 
