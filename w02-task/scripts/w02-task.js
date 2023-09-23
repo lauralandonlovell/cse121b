@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = "Laura Landon-Lovell";
 let currentYear = "2023";
-let profilePicture = "/images/lauraimage.png";
+let profilePicture = "images/lauraimage.png";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById("name");
