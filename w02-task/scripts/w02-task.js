@@ -5,28 +5,29 @@
 /* Step 2 - Variables */
 let fullName = "Laura Landon-Lovell";
 let currentYear = "2023";
-let profilePicture = "images/Lauracopy.JPG";
+let profilePicture = "images/lauraimage.JPG";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById("name");
 const foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-var imageElement = document.createElement("img");
+var imageElement = ("img");
+imageElement.src = profilePicture;
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = `<strong>${"Laura Landon-Lovell"}</strong>`;
-yearElement.textContent = `<strong>${"2023"}</strong>;
-imageElement.setAttribute("src", profilePicture);
-imageElement = element.setAttribute("alt", "Profile image of ${fullName}");
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
+yearElement.textContent = "2023";
+imageElement.src = profilePicture;
+imageElement.setAttribute = ("alt", `"Profile image of ${fullName}"`);
 
 /* Step 5 - Array */
-const foods = new Array("Tomato Feta Pasta", "Curry Pizza", "Clementines", "See's Candy Raspberry Dark Chocolate Truffle", "Pot Stickers", "Egg Rolls");
-console.log(foods);
+let foods = ["Tomato Feta Pasta", "Curry Pizza", "Clementines", "See's Candy Raspberry Dark Chocolate Truffle", "Pot Stickers", "Egg Rolls"];
+//console.log(foods);
 /*trying loop*/
 foods.forEach((food)=> console.log(food));
 foods.push("Spaghetti");
-foods.innerHTML += "<br>${favFoods}";
-console.log(foods, [0]);
+foodElement.innerHTML += `"<br>${foods}<br>"`;
+console.log(foods[0]);
 foods.pop([0]);
 
 
