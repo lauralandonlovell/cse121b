@@ -5,20 +5,19 @@
 /* Step 2 - Variables */
 let fullName = "Laura Landon-Lovell";
 let currentYear = "2023";
-let profilePicture = "images/lauraimage.JPG";
+let profilePicture = "/images/lauraimage.png";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById("name");
 const foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-var imageElement = ("img");
-imageElement.src = profilePicture;
+imageElement = document.createElement("images/lauraimage.png");
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = "2023";
-imageElement.src = profilePicture;
-imageElement.setAttribute = ("alt", `"Profile image of ${fullName}"`);
+imageElement = profilePicture;
+imageElement = ("alt", `"Profile image of ${fullName}"`);
 
 /* Step 5 - Array */
 let foods = ["Tomato Feta Pasta", "Curry Pizza", "Clementines", "See's Candy Raspberry Dark Chocolate Truffle", "Pot Stickers", "Egg Rolls"];
