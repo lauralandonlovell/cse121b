@@ -11,7 +11,7 @@ let profilePicture = "images/lauraimage.png";
 const nameElement = document.getElementById("name");
 const foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-imageElement = document.createElement("images/lauraimage.png");
+var imageElement = /*document.createElement*/("images/lauraimage.png");
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
