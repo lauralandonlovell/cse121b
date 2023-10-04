@@ -16,7 +16,7 @@ const myProfile =
     placesLived:
     [
 
-    ]   
+    ],   
     
 
 }
@@ -31,7 +31,7 @@ const places =
         "1 yr", "1 yr", "12 yrs", "5 yrs", "8 yrs", "3 yrs", "3 months", "10 yrs", "3 yrs", "4 yrs", "1 yr and counting"
     ]
 }
-myProfile.placesLived.push(places);
+myProfile.placesLived.push(places.place);
 document.querySelector("#name").textContent = myProfile.name;
 document.querySelector("img").setAttribute("src", "w04-taskJavascript/images/lauraimage.png");
 document.querySelector("img").setAttribute("alt", "Laura");
@@ -51,9 +51,9 @@ myProfile.hobbies.forEach(hobby =>
 document.querySelector("#places-lived").textContent = myProfile.placesLived;
 myProfile.placesLived.forEach(place =>
     {
-        let dt = document.createElement("dt");
-        dt.textContent = place;
-        document.querySelector("#places-lived").appendChild("dt");
+        let DataList = document.createElement("dl");
+        dl.textContent = place;
+        document.querySelector("#places-lived").append("dl");
     });
 
 
