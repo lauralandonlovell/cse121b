@@ -4,7 +4,7 @@
 const myProfile = 
 {
     name: "Laura",
-    photo: "w04-taskJavascript/images/lauraimage.png",
+    photo: "images/lauraimage.png",
     favoriteFoods: 
     [
         "Tomato Feta Pasta", "Curry Pizza", "Clementines", "See's Candy Raspberry Dark Chocolate Truffle", "Pot Stickers", "Egg Rolls"
@@ -33,7 +33,7 @@ const places =
 }
 myProfile.placesLived.push(places.place);
 document.querySelector("#name").textContent = myProfile.name;
-document.querySelector("img").setAttribute("src", "w04-taskJavascript/images/lauraimage.png");
+document.querySelector("img").setAttribute("src", "images/lauraimage.png");
 document.querySelector("img").setAttribute("alt", "Laura");
 myProfile.favoriteFoods.forEach(food => 
     {
@@ -51,9 +51,9 @@ myProfile.hobbies.forEach(hobby =>
 document.querySelector("#places-lived").textContent = myProfile.placesLived;
 myProfile.placesLived.forEach(place =>
     {
-        let DataList = document.createElement("dl");
-        dl.textContent = place;
-        document.querySelector("#places-lived").append("dl");
+        let dt = document.createElement("dt");
+        dt.textContent = place;
+        document.querySelector("#places-lived").appendChild("dt");
     });
 
 
